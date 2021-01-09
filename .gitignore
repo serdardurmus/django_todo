@@ -80,14 +80,16 @@ celerybeat-schedule
 .env
 
 # virtualenv
+.tenv
+tenv/
 .venv
 venv/
 ENV/
 .vscode
 myenv/
 .myenv
-tenv/
 .tenv
+tenv/
 denv/
 .denv
 

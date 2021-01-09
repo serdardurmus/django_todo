@@ -1,5 +1,7 @@
 # Django Todo Apps
 # install
+- ikke gjøre å sende filene til github
+<br>
 
 - .gitignore
     - tenv er i gitignore
@@ -14,20 +16,24 @@
 - settings/SECRET_KEY -> .env
 - mv .\todo_proj\ src 
 
-- py -m pip install python-decouple
+- py -m pip install python-decouple  // .env içine verileri koymamızı sağlıyor
 - pip freeze >.\requirement.txt    (update)
+<br>
 
-- py manage.py startapp fscohort
-    - fscohort/urls.py dosyası oluşturduk  // url yapısını oluşturmak için
-    - settings.py içine 'fscohot' ekle 
+- kan gjøre å sende filene til github
+<br>
 
-
-
+- py manage.py startapp todo
+    - todo/urls.py dosyası oluşturduk  // url yapısını oluşturmak için
+    - settings.py içine 'todo' veya 'todo.apps.TodoConfig' ekle 
 - py manage.py runserver
+<br>
 
 - py manage.py migrate  // Modelde değişiklik yapacaksak migrate komutunu kullanıyoruz
 - py manage.py makemigrations
 - py manage.py migrate
+
+<br>
 
 - py manage.py createsuperuser
 
