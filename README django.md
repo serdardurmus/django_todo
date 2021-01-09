@@ -1,17 +1,18 @@
-# Django Todo Apps
+# Django Hands-on Trainings
+
 # install
 
+- pip intsall -r .\requirements.txt  // github'tan indirdiğimiz projeyi kullanmak için
+
 - .gitignore
-    - tenv er i gitignore
-- py -m venv tenv
-- .\tenv\Scripts\activate
+    - içine myenv dosyasını ekle
+- py -m venv myenv  // Bu zorunlu değil, best pracsis
+- .\myenv\Scripts\activate
 - pip install django
-
-- pip freeze // det kan være sjekke
+- pip freeze // yukarıdaki kodun yüklendiğini anlıyoruz
 - pip freeze >.\requirement.txt    (update)
-
-- django-admin startproject todo_proj (prosjectsnavn)
-- mv .\todo_proj\ src 
+- django-admin startproject clarusway(proje adi)
+- mv .\clarusway\ src // iki tane iç içe clarusway klasörü oluyor. 1.nin adını değiştiriyoruz.
 
 - py manage.py startapp fscohort
     - fscohort/urls.py dosyası oluşturduk  // url yapısını oluşturmak için
