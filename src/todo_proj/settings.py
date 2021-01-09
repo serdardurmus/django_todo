@@ -56,7 +56,7 @@ ROOT_URLCONF = 'todo_proj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR, "templates"], # Önce src/templates klasörüne bakar, boşsa app içine gider. varsa burdaki dosyayı çalıştırır
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
