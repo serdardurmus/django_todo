@@ -11,13 +11,17 @@
 - pip freeze >.\requirement.txt    (update)
 
 - django-admin startproject todo_proj (prosjectsnavn)
+- settings/SECRET_KEY -> .env
 - mv .\todo_proj\ src 
+
+- py -m pip install python-decouple
+- pip freeze >.\requirement.txt    (update)
 
 - py manage.py startapp fscohort
     - fscohort/urls.py dosyası oluşturduk  // url yapısını oluşturmak için
     - settings.py içine 'fscohot' ekle 
 
-- pip install python-decouple //
+
 
 - py manage.py runserver
 
