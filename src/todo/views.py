@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import Todo
+from .forms import TodoAddForm
+
 # Create your views here.
 
 def home(request):
@@ -11,3 +13,10 @@ def todo_list(request):
         'todos': todos
     }
     return render(request, "todo/todo_list.html", context)
+
+def todo_create(request):
+    form = TodoAddForm()
+    context = {
+        'form': form
+    }
+    return render(request, "todo/todo_create.html", context)
