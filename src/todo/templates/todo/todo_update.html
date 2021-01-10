@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    todo update
+{% endblock title %}
+    
+
+{% block content %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p}}
+        <!-- {{ form }} -->
+        <input type="submit" value="Update">
+    </form>
+    <a href="{% url 'todo-delete' todo.id %}"><button>Delete</button></a>
+{% endblock content %}
+    
